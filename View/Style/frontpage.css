@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'Coolvetica';
+    src: url("../Fonts/coolvetica rg.ttf") format('truetype');
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Coolvetica';
+    background-image: url('../Image/bg.jpg');
+}
+
+.font{
+    font-family: 'Coolvetica';
+    letter-spacing: 2px;
+}
+
+.judulMain{
+    font-size: 65px;
+    letter-spacing: 5px;
+    font-family: 'Coolvetica';
+    text-align: center;
+}
+
+.clearFloat{
+    clear: both;
+}
