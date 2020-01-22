@@ -10,6 +10,7 @@ body {
     background-image: url('../Image/HADE.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 1920px;
 }
 
 .font{
