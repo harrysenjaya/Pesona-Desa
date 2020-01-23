@@ -1,9 +1,9 @@
 <?php
 	$url = $_SERVER['REDIRECT_URL'];
-	$baseURL= '/funcoding';
+	$baseURL= '/pesona-desa';
 	if($_SERVER["REQUEST_METHOD"]=="GET"){
 		switch ($url){
-			case $baseURL."/frontpage":
+			case $baseURL."/home":
 				require_once "Controller/frontpageController.php";
 				$frontpage = new FrontpageController();
 				echo $frontpage ->start();

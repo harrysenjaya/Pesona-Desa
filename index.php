@@ -1,3 +1,3 @@
 <?php
-	header('Location: frontpage');
+	header('Location: home');
 ?>
