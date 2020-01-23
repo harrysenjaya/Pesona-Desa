@@ -3,35 +3,17 @@
     src: url("../Fonts/coolvetica rg.ttf") format('truetype');
 }
 
-*{
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
+body {
     margin:0;
     padding:0;
     font-family: 'Coolvetica';
     background-image: url('../Image/HADE.jpg');
     background-size: cover;
-    background-repeat: no-repeat;    
-}
-
-.header{
-    width: 80vw;
-    height: 100px;
-    min-width: 700px;
-    float: right;
-    color: white;
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: right;
-}
-
-.wrapper{
-    width: 1000px;
-    overflow: auto;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .font{
@@ -44,7 +26,7 @@ html, body {
     letter-spacing: 8px;
     font-family: 'Coolvetica';
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 100px;
 }
 
 .clearFloat{
