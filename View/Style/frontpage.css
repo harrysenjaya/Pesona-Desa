@@ -3,13 +3,16 @@
     src: url("../Fonts/coolvetica rg.ttf") format('truetype');
 }
 
-body {
+html,body {
     margin:0;
     padding:0;
+    height:100vh;
     font-family: 'Coolvetica';
     background-image: url('../Image/HADE.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
 }
 
 .font{
