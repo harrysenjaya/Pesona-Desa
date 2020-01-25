@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="View/Style/frontpage.css" />
     <link rel="stylesheet" href="View/Fonts/font-awesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="View/Script/frontpage.js"></script>
+    <script src="View/Script/frontpage.js" defer></script>
 </head>
 
 <body>
     <div class="font" style="float: right;font-size: 30px; margin-top: 20px; margin-right: 50px;">
         <i class="fa fa-user w3-text-white"></i>
-        <a id="loginText" href="" style="text-decoration: none;">
+        <a id="loginText" style="text-decoration: none;">
             <p class="mainLogin" style="display: inline; color: white; margin-right: 10px; font-size: 25px;">Sign in</p>
         </a>
     </div>
