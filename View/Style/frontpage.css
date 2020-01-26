@@ -75,7 +75,7 @@ html, body {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 30%;
 }
 
 .close {
@@ -89,4 +89,13 @@ html, body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.bs-example{
+    margin: 20px;        
+}
+
+#textLogin{
+    font-size: 25px;
+    text-align: center;
 }
