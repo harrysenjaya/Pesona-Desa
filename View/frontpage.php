@@ -57,7 +57,7 @@
                 <p>Login</p>
             </div>
             <div class="bs-example">
-                <form class="needs-validation" method="post" novalidate>
+                <form action ="login" class="needs-validation" method="post" novalidate>
                     <div class="form-group">
                         <label for="inputEmail">Email</label>
                         <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
