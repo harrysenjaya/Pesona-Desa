@@ -9,16 +9,11 @@
             $content = ob_get_contents();
             ob_end_clean();
             ob_start();
-            include 'View/layout/head.php';
+            include 'View/layout/header.php';
             $head = ob_get_contents();
-            ob_end_clean();
-            ob_start();
-            include 'View/layout/foot.php';
-            $foot = ob_get_contents();
             ob_end_clean();
             echo $head;
             echo $content;
-            echo $foot;
         }
 
         public static function createView1($view){
