@@ -46,7 +46,7 @@
         <div class="loginContent">
             <form action ="login" method="POST">
                 <span class="close">&times;</span><br>
-                <h1 class="modalJudul">Login</h1>
+                <p class="modalJudul">Login</p>
                 <p class="judulField">Email</p>
                 <input name="email" class="inputModal" type="email" id="emailLogin" required />
                 <p class="judulField">Password</p>
