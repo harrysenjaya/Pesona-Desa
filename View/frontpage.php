@@ -37,7 +37,7 @@
     <div>
         <div style="width: 49%; display: inline-block;">
             <div style="width:100%;text-align: center;">
-                <button class="mainButton">STAY</button>
+                <button class="mainButton" id="stay">STAY</button>
             </div>
         </div>
         <div

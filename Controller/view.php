@@ -1,9 +1,6 @@
 <?php
     class View{
-        public static function createView($view,$param){
-            foreach ($param as $key => $value) {
-                $$key=$value;
-            }
+        public static function createView($view){
             ob_start();
             include 'View/'.$view;
             $content = ob_get_contents();

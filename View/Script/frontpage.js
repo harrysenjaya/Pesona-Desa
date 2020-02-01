@@ -4,6 +4,11 @@ var btn = document.getElementById("loginText");
 
 var span = document.getElementsByClassName("close")[0];
 
+var stay = document.getElementById('stay');
+stay.addEventListener('click', function() {
+  document.location.href = 'stay';
+});
+
 btn.onclick = function () {
   modal.style.display = "block";
 }
@@ -17,3 +22,4 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
