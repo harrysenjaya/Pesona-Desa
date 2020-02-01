@@ -8,6 +8,11 @@
 				$frontpage = new FrontpageController();
 				echo $frontpage ->start();
 				break;
+			case $baseURL."/stay":
+				require_once "Controller/stayController.php";
+				$stay = new stayController();
+				echo $stay -> start();
+				break;	
 			default:
 				echo '404 not found';
 				break;
