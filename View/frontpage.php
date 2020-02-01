@@ -36,7 +36,7 @@
     <div>
         <div style="width: 49%; display: inline-block;">
             <div style="width:100%;text-align: center;">
-                <button class="mainButton">STAY</button>
+                <button class="mainButton" id="stay">STAY</button>
             </div>
         </div>
         <div
@@ -51,14 +51,15 @@
 
     <div id="loginModal" class="modal">
         <div class="loginContent">
-            <span class="close">&times;</span><br>
-            <h1 class="modalJudul">Login</h1>
-            <p class="judulField">Email</p>
-            <input class="inputModal" type="text" id="emailLogin" required>
-            <p class="judulField">Password</p>
-            <input class="inputModal" type="password" id="pswLogin" required>
-            <input type="checkbox"> <label>Remember me</label><br>
-            <button class="modalButton">Sign in</button>
+            <form action ="login" class="needs-validation" method="POST" novalidate>
+                <span class="close">&times;</span><br>
+                <h1 class="modalJudul">Login</h1>
+                <p class="judulField">Email</p>
+                <input name="email" class="inputModal" type="text" id="emailLogin" required>
+                <p class="judulField">Password</p>
+                <input name="password" class="inputModal" type="password" id="pswLogin" required>
+                <button type="submit" class="modalButton">Sign in</button>
+            </form>
         </div>
     </div>
 
