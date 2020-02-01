@@ -13,14 +13,14 @@
             $password = $_POST['password'];
             $email = $this->db->escapeString($email);
             $password = md5($this->db->escapeString($password));
-            $query = "SELECT FirstName FROM user WHERE email='$email' AND password='$password' ";
+            $query = "SELECT FirstName FROM user WHERE Email='$email' AND Password='$password' ";
             $query_result = $this->db->executeSelectQuery($query);
             if($query_result!=NULL){
                 $_SESSION['name'] = $query_result[0]['name'];
                 header('Location: home');
             }
             else{
-                echo "<script type='text/javascript'>alert('Invalid Username or Password.');window.location.href='home';</script>";
+                echo "<script type='text/javascript'>alert('Invalid Username or Password.');window.location.href='login';</script>";
             }
         }
     }

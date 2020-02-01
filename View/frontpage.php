@@ -57,15 +57,15 @@
                 <p>Login</p>
             </div>
             <div class="bs-example">
-                <form action ="login" class="needs-validation" method="post" novalidate>
+                <form action ="login" class="needs-validation" method="POST" novalidate>
                     <div class="form-group">
                         <label for="inputEmail">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                         <div class="invalid-feedback">Please enter a valid email address.</div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                        <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password" required>
                         <div class="invalid-feedback">Please enter your password to continue.</div>
                     </div>
                     <div class="form-group">
