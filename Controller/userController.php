@@ -5,7 +5,7 @@
         protected $db;
 
         public function __construct(){
-            $this->db = new MySQLDB ("localhost", "root", "", "pesonadesa");
+            $this->db = new MySQLDB ("localhost", "root", "", "pesa8467_pesonadesa");
         }
 
         public function login(){
