@@ -44,13 +44,13 @@
 
     <div id="loginModal" class="modal">
         <div class="loginContent">
-            <form action ="login" class="needs-validation" method="POST" novalidate>
+            <form action ="login" class="needs-validation" method="POST">
                 <span class="close">&times;</span><br>
                 <h1 class="modalJudul">Login</h1>
                 <p class="judulField">Email</p>
-                <input name="email" class="inputModal" type="text" id="emailLogin" required>
+                <input name="email" class="inputModal" type="email" id="emailLogin" required />
                 <p class="judulField">Password</p>
-                <input name="password" class="inputModal" type="password" id="pswLogin" required>
+                <input name="password" class="inputModal" type="password" id="pswLogin" required />
                 <button type="submit" class="modalButton">Sign in</button>
             </form>
         </div>
