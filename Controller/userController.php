@@ -16,7 +16,7 @@
             $query = "SELECT FirstName FROM user WHERE Email='$email' AND Password='$password' ";
             $query_result = $this->db->executeSelectQuery($query);
             if($query_result!=NULL){
-                $_SESSION['name'] = $query_result[0]['name'];
+                $_SESSION['name'] = $query_result[0]['FirstName'];
                 header('Location: home');
             }
             else{
