@@ -15,5 +15,3 @@
             <li class="rightNav" ><i class="fa fa-user" style="display: block; color: black; padding: 5px 16px; text-decoration: none; margin-top: 0px; border-radius: 15px; font-size: 40px;"></i></li>
         </ul>
     </div>
-</body>
-</html>

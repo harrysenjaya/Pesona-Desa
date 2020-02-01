@@ -8,10 +8,10 @@
 				$frontpage = new FrontpageController();
 				echo $frontpage ->start();
 				break;
-			case $baseURL."/login":
-				require_once "Controller/loginController.php";
-				$login = new LoginController();
-				echo $login -> start();
+			case $baseURL."/stay":
+				require_once "Controller/stayController.php";
+				$stay = new stayController();
+				echo $stay -> start();
 				break;
 			case $baseURL."/signup":
 				require_once "Controller/signupController.php";
