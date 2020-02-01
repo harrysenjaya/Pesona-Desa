@@ -42,7 +42,7 @@
 
     <div id="loginModal" class="modal">
         <div class="loginContent">
-            <form action ="login" class="needs-validation" method="POST">
+            <form action ="login" method="POST">
                 <span class="close">&times;</span><br>
                 <h1 class="modalJudul">Login</h1>
                 <p class="judulField">Email</p>
