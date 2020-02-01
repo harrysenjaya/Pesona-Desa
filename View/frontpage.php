@@ -18,13 +18,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Modal Login-->
+    
 </head>
 
 <body>
     <div class="font" style="float: right;font-size: 30px; margin-top: 20px; margin-right: 50px;">
         <i class="fa fa-user w3-text-white"></i>
         <a id="loginText" style="text-decoration: none;">
-            <p class="mainLogin" style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">Sign in</p>
+            <p class="mainLogin"
+                style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">Sign in
+            </p>
         </a>
     </div>
     <div class="clearFloat"></div>
@@ -69,7 +72,26 @@
                         <label class="form-check-label"><input type="checkbox"> Remember me</label>
                     </div>
                     <button type="submit" class="btn btn-primary" id="signInPassword">Sign in</button>
-                </form>                
+                </form>
+
+                <script>
+                    (function () {
+                        'use strict';
+                        window.addEventListener('load', function () {    
+                            var forms = document.getElementsByClassName('needs-validation');
+                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
+                </script>
+
             </div>
         </div>
     </div>
