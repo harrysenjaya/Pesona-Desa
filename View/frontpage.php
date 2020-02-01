@@ -5,7 +5,6 @@
     <title>Pesona Desa</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="View/Style/w3.css">
     <link rel="stylesheet" href="View/Style/frontpage.css" />
     <link rel="stylesheet" href="View/Fonts/font-awesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +22,7 @@
 
 <body>
     <div class="font" style="float: right;font-size: 30px; margin-top: 20px; margin-right: 50px;">
-        <i class="fa fa-user w3-text-white"></i>
+        <i class="fa fa-user" style="color: white"></i>
         <a id="loginText" style="text-decoration: none;">
             <p class="mainLogin"
                 style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">Sign in
@@ -32,7 +31,7 @@
     </div>
     <div class="clearFloat"></div>
     <div>
-        <h1 class="w3-text-white judulMain">PESONA DESA</h1>
+        <h1 class="judulMain" style="color:white">PESONA DESA</h1>
     </div>
     <div>
         <div style="width: 49%; display: inline-block;">
@@ -52,47 +51,14 @@
 
     <div id="loginModal" class="modal">
         <div class="loginContent">
-            <span class="close">&times;</span>
-            <div id="textLogin">
-                <p>Login</p>
-            </div>
-            <div class="bs-example">
-                <form action="/examples/actions/confirmation.php" class="needs-validation" method="post" novalidate>
-                    <div class="form-group">
-                        <label for="inputEmail">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-                        <div class="invalid-feedback">Please enter a valid email address.</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-                        <div class="invalid-feedback">Please enter your password to continue.</div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-check-label"><input type="checkbox"> Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="signInPassword">Sign in</button>
-                </form>
-
-                <script>
-                    (function () {
-                        'use strict';
-                        window.addEventListener('load', function () {    
-                            var forms = document.getElementsByClassName('needs-validation');
-                            var validation = Array.prototype.filter.call(forms, function (form) {
-                                form.addEventListener('submit', function (event) {
-                                    if (form.checkValidity() === false) {
-                                        event.preventDefault();
-                                        event.stopPropagation();
-                                    }
-                                    form.classList.add('was-validated');
-                                }, false);
-                            });
-                        }, false);
-                    })();
-                </script>
-
-            </div>
+            <span class="close">&times;</span><br>
+            <h1 class="modalJudul">Login</h1>
+            <p class="judulField">Email</p>
+            <input class="inputModal" type="text" id="emailLogin" required>
+            <p class="judulField">Password</p>
+            <input class="inputModal" type="password" id="pswLogin" required>
+            <input type="checkbox"> <label>Remember me</label><br>
+            <button class="modalButton">Sign in</button>
         </div>
     </div>
 
