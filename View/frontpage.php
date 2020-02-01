@@ -17,7 +17,9 @@
         <a id="loginText" style="text-decoration: none;">
             <p class="mainLogin"
                 style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">Sign in
+                <?php echo $_SESSION['email'];?>
             </p>
+
         </a>
     </div>
     <div class="clearFloat"></div>

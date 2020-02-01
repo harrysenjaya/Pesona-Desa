@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	$url = $_SERVER['REDIRECT_URL'];
 	$baseURL= '/pesona-desa';
 	if($_SERVER["REQUEST_METHOD"]=="GET"){
