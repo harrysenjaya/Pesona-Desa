@@ -20,7 +20,7 @@
                 header('Location: home');
             }
             else{
-                echo "<script type='text/javascript'>alert('Invalid Username or Password.');window.location.href='login';</script>";
+                header("Location: login");
             }
         }
     }
