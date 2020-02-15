@@ -26,14 +26,4 @@
         </ul>
     </div>
     <script>
-        function changeActive(evt){
-            console.log("ASDASD");
-            var tabJudul = document.getElementsByClassName("navJudul");
-            console.log(tabJudul);
-            var i;
-            for (i = 0; i < tabJudul.length; i++) {
-                tabJudul[i].className = tabJudul[i].className.replace(" active", "");
-            }
-            evt.currentTarget.className += " active";
-        }
     </script>

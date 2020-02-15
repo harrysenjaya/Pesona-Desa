@@ -9,3 +9,14 @@ for($i=0; $i<sizeof($data); $i++){
 }
 echo "</div>";
 ?>
+<html>
+    <div>
+        <img src = "Image/$foto"> 
+</div>
+    </html>
+
+    for($i=0; $i<sizeof($data); $i++){
+    $foto = $data[0]['Foto'];
+    echo sesut.html
+}
+
