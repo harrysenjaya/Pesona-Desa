@@ -15,8 +15,7 @@
     <div class="font" style="float: right;font-size: 30px; margin-top: 20px; margin-right: 50px;">
         <i class="fa fa-user" style="color: white"></i>
         <a id="loginText" style="text-decoration: none;">
-            <p class="mainLogin"
-                style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">
+            <p class="mainLogin" style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">
                 <?php
                     if ( isset($_SESSION['name'])) {
                         echo $_SESSION['name'];
