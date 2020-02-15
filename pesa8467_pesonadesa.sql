@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Feb 2020 pada 17.30
+-- Waktu pembuatan: 15 Feb 2020 pada 18.35
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.3
 
@@ -30,16 +30,23 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `stay` (
   `Id` int(10) NOT NULL,
-  `Nama Desa` varchar(100) NOT NULL,
+  `NamaDesa` varchar(100) NOT NULL,
   `Foto` varchar(100) NOT NULL,
   `Deskripsi` varchar(1000) NOT NULL,
-  `Tempat Tidur` varchar(100) NOT NULL,
+  `TempatTidur` varchar(100) NOT NULL,
   `Fasilitas` varchar(1000) NOT NULL,
-  `Availability` date NOT NULL,
-  `Review` varchar(1000) NOT NULL,
-  `Aturan Tempat` varchar(1000) NOT NULL,
-  `Objek Wisata Sekitar` varchar(1000) NOT NULL
+  `CheckIn` date NOT NULL,
+  `CheckOut` date NOT NULL,
+  `AturanTempat` varchar(1000) NOT NULL,
+  `ObjekWisataSekitar` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `stay`
+--
+
+INSERT INTO `stay` (`Id`, `NamaDesa`, `Foto`, `Deskripsi`, `TempatTidur`, `Fasilitas`, `CheckIn`, `CheckOut`, `AturanTempat`, `ObjekWisataSekitar`) VALUES
+(1, 'Pesona Desa', 'pesonadesa', 'GA ADA DESKRIPSI', '1, SINGLE', 'GA ADA FASILITAS', '2020-02-18', '2020-02-20', 'SAKAREPMU BAE!', 'GA ADA!');
 
 -- --------------------------------------------------------
 
@@ -91,7 +98,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `stay`
 --
 ALTER TABLE `stay`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
