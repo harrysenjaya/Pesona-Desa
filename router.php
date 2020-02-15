@@ -14,6 +14,11 @@
 				$stay = new stayController();
 				echo $stay -> start();
 				break;	
+			case $baseURL."/experience":
+				require_once "Controller/experienceController.php";
+				$experience = new experienceController();
+				echo $experience -> start();
+				break;	
 			default:
 				echo '404 not found';
 				break;
