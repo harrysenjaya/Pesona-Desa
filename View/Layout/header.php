@@ -10,8 +10,8 @@
     <div class="header">
         <ul>
             <li style="margin-left: 0px;"><a href="home"style="margin-top: 0px;"><i class="fa fa-home"></i></a></li>
-            <li><a id="stay" class="navJudul" href="stay" onclick="changeActive(event)">STAY</a></li>
-            <li><a id="experience" class="navJudul" href="experience" onclick="changeActive(event)">EXPERIENCE</a></li>
+            <li><a id="stay" class="navJudul" href="stay">STAY</a></li>
+            <li><a id="experience" class="navJudul" href="experience">EXPERIENCE</a></li>
             <li class="rightNav" ><a href="profile">
                 <?php
                     if ( isset($_SESSION['name'])) {
