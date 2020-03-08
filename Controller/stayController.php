@@ -8,7 +8,7 @@
 		}
 
 		public function start(){
-			$query = "SELECT Id,NamaDesa,Foto FROM stay";
+			$query = "SELECT Id,NamaDesa,NamaHouseStay,Foto,Harga FROM stay";
 			$hasil = $this->db->executeSelectQuery($query);
             return View::createView2('stay.php',[
 			"data"=> $hasil,
