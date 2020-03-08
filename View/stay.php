@@ -46,8 +46,22 @@
         cursor: pointer;
     }
 
+    .contentStay{
+        margin: 0 auto;
+        width: 1300px;
+        height: 1000px;
+        text-align: justify;
+    }
+
     .hotelWrapper{
-        display: inline-block;
+        float:left;
+        width: 300px;
+        border: 1px solid black;
+        margin: 60px 50px;
+    }
+
+    .desWrapper{
+        padding: 10px;
     }
 </style>
 
@@ -74,17 +88,19 @@
 <?php
 echo "<div class='contentStay'>";
 for($i=0; $i<sizeof($data); $i++){
-    $foto = $data[0]['Foto'];
+    $foto = $data[$i]['Foto'];
     echo "<div class='hotelWrapper'>";
-    echo "<img src=Image/$foto.jpg>";
+    echo "<img style='max-width: 100%' src=Image/$foto.jpg>";
     echo "<br>";
-    echo $data[0]['NamaHouseStay'];
+    echo "<div class='desWrapper'>";
+    echo $data[$i]['NamaHouseStay'];
     echo "<br>";
     echo "Lokasi : ";
-    echo $data[0]['NamaDesa'];
+    echo $data[$i]['NamaDesa'];
     echo "<br>";
     echo "Harga  : ";
-    echo $data[0]['Harga'];
+    echo $data[$i]['Harga'];
+    echo "</div>";
     echo "</div>";
 }
 echo "</div>";
