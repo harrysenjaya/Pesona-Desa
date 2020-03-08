@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Mar 2020 pada 17.34
+-- Waktu pembuatan: 08 Mar 2020 pada 17.52
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.3
 
@@ -21,6 +21,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `pesa8467_pesonadesa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `experience`
+--
+
+CREATE TABLE `experience` (
+  `Id` int(11) NOT NULL,
+  `NamaDesa` varchar(100) NOT NULL,
+  `Brand` varchar(100) NOT NULL,
+  `Pengalaman` varchar(100) NOT NULL,
+  `Durasi` varchar(100) NOT NULL,
+  `Foto` varchar(100) NOT NULL,
+  `Deskripsi` varchar(1000) NOT NULL,
+  `JumlahPeserta` varchar(100) NOT NULL,
+  `TingkatAktivitas` varchar(100) NOT NULL,
+  `Bahasa` varchar(50) NOT NULL,
+  `Highlight` varchar(100) NOT NULL,
+  `CheckIn` date NOT NULL,
+  `CheckOut` date NOT NULL,
+  `Do` varchar(1000) NOT NULL,
+  `Dont` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `experience`
+--
+
+INSERT INTO `experience` (`Id`, `NamaDesa`, `Brand`, `Pengalaman`, `Durasi`, `Foto`, `Deskripsi`, `JumlahPeserta`, `TingkatAktivitas`, `Bahasa`, `Highlight`, `CheckIn`, `CheckOut`, `Do`, `Dont`) VALUES
+(1, 'Desa Karangduwur', 'Sawangan Adventure', 'Telusur gua Sawangan Lor', 'Half day (1,5-3 jam)', 'exp', 'Menelusuri gua horizontal di area Sawangan Adventure. Peserta akan diajak menelusuri Gua Sawangan Lor dengan berjalan kaki selama 1,5 jam. Namun, sebelum menuju pintu/mulut gua, peserta akan berjalan menikmati hutan di desa. Peserta akan menemukan static pool pada akhir perjalanan penelusuran gua. Dan memanjat tebing setelah keluar gua. ', '6-10 orang', 'Tinggi', 'Indonesia', 'Helm, sepatu karet, 2 guide untuk 1 rombongan, snack dan minum di akhir tebing', '0000-00-00', '0000-00-00', 'Do: Membawa makanan ringan dan minuman sendiri.', 'Don\'t: Menyentuh stalagtit stalagmit yang masih hidup. Mengambil sesuatu dari dalam gua. ');
 
 -- --------------------------------------------------------
 
@@ -98,6 +129,12 @@ INSERT INTO `user` (`FirstName`, `LastName`, `password`, `JenisKelamin`, `Tangga
 --
 
 --
+-- Indeks untuk tabel `experience`
+--
+ALTER TABLE `experience`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indeks untuk tabel `stay`
 --
 ALTER TABLE `stay`
@@ -112,6 +149,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `experience`
+--
+ALTER TABLE `experience`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `stay`
