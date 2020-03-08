@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Mar 2020 pada 18.20
+-- Waktu pembuatan: 08 Mar 2020 pada 18.52
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.3
 
@@ -97,7 +97,10 @@ CREATE TABLE `stay` (
 --
 
 INSERT INTO `stay` (`Id`, `NamaDesa`, `NamaHouseStay`, `Foto`, `Deskripsi`, `Keterangan`, `TempatTidur`, `JumlahTamu`, `Toilet`, `AC/Kipas`, `SuhuAlami`, `Sarapan`, `Dapur`, `Wifi`, `TVKabel`, `ParkirGratis`, `AlarmAsap`, `AlarmKarbonMonoksida`, `Kamar 1`, `Kamar 2`, `Kamar 3`, `Kamar 4`, `RuangBersama`, `CheckIn`, `CheckOut`, `Do`, `Dont`, `DayaTarikSekitar`, `Harga`) VALUES
-(1, 'Desa Jatijajar', 'Guest House Avicenna 2', 'pesonadesa', 'Sebuah guest house di lingkungan pedesaan Desa Jatijajar. Mata pencaharian utama penduduk desa adalah bertani padi. Maka, tamu dapat menikmati sawah yang berada langsung di belakang rumah.', 'Bisa digunakan seluruh rumah', '4 kamar / 4 tempat tidur', '8 tamu', '2 kamar mandi + ruang toilet', 'Kamar tidur tidak menggunakan AC. Ruang bersama menggunakan AC.', '', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Tidak', '1 tempat tidur queen untuk 2 tamu\r\n', '1 tempat tidur queen untuk 2 tamu\r\n', '1 tempat tidur king untuk 2 tamu\r\n', '1 tempat tidur single untuk 1 tamu\r\n', '2 sofa\r\n', '0000-00-00', '0000-00-00', 'Do: Terdapat beberapa peralatan makan dan peralatan masak di dapur. Tamu dapat menggunakan berbagai peralatan tersebut. Namun, harap bertanggung jawab membersihkan dan merapikan berbagai peralatan yang digunakan.\r\n', 'Don\'t: Merokok di dalam rumah. Membawa dan mengkonsumsi minuman keras. Membawa dan mengkonsumsi obat-obatan terlarang. Aktivitas asusila dan melanggar norma masyarakat yang tidak sesuai dengan budaya setempat.\r\n', '1.Gua Jatijajar \r\n2.Gua Barat \r\n3.Pasar Demangsari (historikal masa Belanda) \r\n4.Outbond Desa Wisata Jatijajar \r\n5. Gua Petruk', 'Rp 1.000.000');
+(1, 'Desa Jatijajar', 'Guest House Avicenna 2', 'pesonadesa', 'Sebuah guest house di lingkungan pedesaan Desa Jatijajar. Mata pencaharian utama penduduk desa adalah bertani padi. Maka, tamu dapat menikmati sawah yang berada langsung di belakang rumah.', 'Bisa digunakan seluruh rumah', '4 kamar / 4 tempat tidur', '8 tamu', '2 kamar mandi + ruang toilet', 'Kamar tidur tidak menggunakan AC. Ruang bersama menggunakan AC.', '', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Tidak', '1 tempat tidur queen untuk 2 tamu\r\n', '1 tempat tidur queen untuk 2 tamu\r\n', '1 tempat tidur king untuk 2 tamu\r\n', '1 tempat tidur single untuk 1 tamu\r\n', '2 sofa\r\n', '0000-00-00', '0000-00-00', 'Do: Terdapat beberapa peralatan makan dan peralatan masak di dapur. Tamu dapat menggunakan berbagai peralatan tersebut. Namun, harap bertanggung jawab membersihkan dan merapikan berbagai peralatan yang digunakan.\r\n', 'Don\'t: Merokok di dalam rumah. Membawa dan mengkonsumsi minuman keras. Membawa dan mengkonsumsi obat-obatan terlarang. Aktivitas asusila dan melanggar norma masyarakat yang tidak sesuai dengan budaya setempat.\r\n', '1.Gua Jatijajar \r\n2.Gua Barat \r\n3.Pasar Demangsari (historikal masa Belanda) \r\n4.Outbond Desa Wisata Jatijajar \r\n5. Gua Petruk', 'Rp 1.000.000'),
+(2, 'Desa Aritonang\r\n', 'Guest House Tugu Aritonang 1\r\n', 'pesonadesa', 'Sebuah guest house di atas bukit pinggir Danau Toba. Sebuah guest house yang berada di area yang sepi dan tenang; jauh dari pemukiman penduduk desa.\r\n', 'Bisa digunakan seluruh rumah\r\n', '2 kamar / 2 kamar tidur\r\n', '4 tamu', '2 kamar mandi + ruang toilet', 'Kamar tidur dan ruang bersama tidak menggunakan AC.\r\n', '', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Ya', 'Tidak', 'Tidak', '1 tempat tidur king untuk 2 tamu\r\n', '2 twin bed untuk 2 tamu\r\n', '', '', '1 sofa\r\n', '0000-00-00', '0000-00-00', '', 'Don\'t: Merokok di dalam rumah. Membawa dan mengkonsumsi minuman keras selain tuak tradisional. Membawa dan mengkonsumsi obat-obatan terlarang. Aktivitas asusila dan melanggar norma masyarakat yang tidak sesuai dengan budaya setempat.\r\n', '1. Danau Toba, 2. Tugu Aritonang\r\n', 'Rp. 500.000'),
+(3, 'Desa Aritonang\r\n', 'Guest House Tugu Aritonang 2\r\n', 'pesonadesa', 'Sebuah guest house di atas bukit pinggir Danau Toba. Sebuah guest house yang berada di area yang sepi dan tenang; jauh dari pemukiman penduduk desa.\r\n', 'Bisa digunakan seluruh rumah\r\n', '2 kamar / 2 kamar tidur\r\n', '4 tamu', '2 kamar mandi + ruang toilet', 'Kamar tidur dan ruang bersama tidak menggunakan AC.', '', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Ya', 'Tidak', 'Tidak', '1 tempat tidur king untuk 2 tamu\r\n', '2 twin bed untuk 2 tamu\r\n', '', '', '1 sofa\r\n', '0000-00-00', '0000-00-00', '', 'Don\'t: Merokok di dalam rumah. Membawa dan mengkonsumsi minuman keras selain tuak tradisional. Membawa dan mengkonsumsi obat-obatan terlarang. Aktivitas asusila dan melanggar norma masyarakat yang tidak sesuai dengan budaya setempat.\r\n', '1. Danau Toba, 2. Tugu Aritonang\r\n', 'Rp. 800.000'),
+(4, 'TES', 'TES', 'pesonadesa', 'dfas', 'asdf', 'fdsa', 'sfda', 'dsfa', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '0000-00-00', '0000-00-00', '', '', '', 'Rp. 300.000');
 
 -- --------------------------------------------------------
 
@@ -161,7 +164,7 @@ ALTER TABLE `experience`
 -- AUTO_INCREMENT untuk tabel `stay`
 --
 ALTER TABLE `stay`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
