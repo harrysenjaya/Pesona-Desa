@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Feb 2020 pada 18.35
+-- Waktu pembuatan: 08 Mar 2020 pada 17.34
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.3
 
@@ -31,22 +31,41 @@ SET time_zone = "+00:00";
 CREATE TABLE `stay` (
   `Id` int(10) NOT NULL,
   `NamaDesa` varchar(100) NOT NULL,
+  `NamaHouseStay` varchar(100) NOT NULL,
   `Foto` varchar(100) NOT NULL,
   `Deskripsi` varchar(1000) NOT NULL,
+  `Keterangan` varchar(1000) NOT NULL,
   `TempatTidur` varchar(100) NOT NULL,
-  `Fasilitas` varchar(1000) NOT NULL,
+  `JumlahTamu` varchar(10) NOT NULL,
+  `Toilet` varchar(50) NOT NULL,
+  `AC/Kipas` varchar(100) NOT NULL,
+  `SuhuAlami` varchar(20) NOT NULL,
+  `Sarapan` varchar(5) NOT NULL,
+  `Dapur` varchar(5) NOT NULL,
+  `Wifi` varchar(5) NOT NULL,
+  `TVKabel` varchar(5) NOT NULL,
+  `ParkirGratis` varchar(5) NOT NULL,
+  `AlarmAsap` varchar(5) NOT NULL,
+  `AlarmKarbonMonoksida` varchar(5) NOT NULL,
+  `Kamar 1` varchar(100) NOT NULL,
+  `Kamar 2` varchar(100) NOT NULL,
+  `Kamar 3` varchar(100) NOT NULL,
+  `Kamar 4` varchar(100) NOT NULL,
+  `RuangBersama` varchar(100) NOT NULL,
   `CheckIn` date NOT NULL,
   `CheckOut` date NOT NULL,
-  `AturanTempat` varchar(1000) NOT NULL,
-  `ObjekWisataSekitar` varchar(1000) NOT NULL
+  `Do` varchar(1000) NOT NULL,
+  `Dont` varchar(1000) NOT NULL,
+  `DayaTarikSekitar` varchar(1000) NOT NULL,
+  `Harga` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `stay`
 --
 
-INSERT INTO `stay` (`Id`, `NamaDesa`, `Foto`, `Deskripsi`, `TempatTidur`, `Fasilitas`, `CheckIn`, `CheckOut`, `AturanTempat`, `ObjekWisataSekitar`) VALUES
-(1, 'Pesona Desa', 'pesonadesa', 'GA ADA DESKRIPSI', '1, SINGLE', 'GA ADA FASILITAS', '2020-02-18', '2020-02-20', 'SAKAREPMU BAE!', 'GA ADA!');
+INSERT INTO `stay` (`Id`, `NamaDesa`, `NamaHouseStay`, `Foto`, `Deskripsi`, `Keterangan`, `TempatTidur`, `JumlahTamu`, `Toilet`, `AC/Kipas`, `SuhuAlami`, `Sarapan`, `Dapur`, `Wifi`, `TVKabel`, `ParkirGratis`, `AlarmAsap`, `AlarmKarbonMonoksida`, `Kamar 1`, `Kamar 2`, `Kamar 3`, `Kamar 4`, `RuangBersama`, `CheckIn`, `CheckOut`, `Do`, `Dont`, `DayaTarikSekitar`, `Harga`) VALUES
+(1, 'Desa Jatijajar', 'Guest House Avicenna 2', 'pesonadesa', 'Sebuah guest house di lingkungan pedesaan Desa Jatijajar. Mata pencaharian utama penduduk desa adalah bertani padi. Maka, tamu dapat menikmati sawah yang berada langsung di belakang rumah.', 'Bisa digunakan seluruh rumah', '4 kamar / 4 tempat tidur', '8 tamu', '2 kamar mandi + ruang toilet', 'Kamar tidur tidak menggunakan AC. Ruang bersama menggunakan AC.', '', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Tidak', '1 tempat tidur queen untuk 2 tamu\r\n', '1 tempat tidur queen untuk 2 tamu\r\n', '1 tempat tidur king untuk 2 tamu\r\n', '1 tempat tidur single untuk 1 tamu\r\n', '2 sofa\r\n', '0000-00-00', '0000-00-00', 'Do: Terdapat beberapa peralatan makan dan peralatan masak di dapur. Tamu dapat menggunakan berbagai peralatan tersebut. Namun, harap bertanggung jawab membersihkan dan merapikan berbagai peralatan yang digunakan.\r\n', 'Don\'t: Merokok di dalam rumah. Membawa dan mengkonsumsi minuman keras. Membawa dan mengkonsumsi obat-obatan terlarang. Aktivitas asusila dan melanggar norma masyarakat yang tidak sesuai dengan budaya setempat.\r\n', '1.Gua Jatijajar \r\n2.Gua Barat \r\n3.Pasar Demangsari (historikal masa Belanda) \r\n4.Outbond Desa Wisata Jatijajar \r\n5. Gua Petruk', 'Rp 1.000.000');
 
 -- --------------------------------------------------------
 
@@ -98,7 +117,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `stay`
 --
 ALTER TABLE `stay`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
