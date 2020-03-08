@@ -75,7 +75,7 @@
 echo "<div class='contentStay'>";
 for($i=0; $i<sizeof($data); $i++){
     $foto = $data[0]['Foto'];
-    echo "<div class='hotelWrapper'>"
+    echo "<div class='hotelWrapper'>";
     echo "<img src=Image/$foto.jpg>";
     echo "<br>";
     echo $data[0]['NamaHouseStay'];
