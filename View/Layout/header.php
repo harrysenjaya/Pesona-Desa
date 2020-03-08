@@ -14,14 +14,16 @@
             <li><a id="experience" class="navJudul" href="experience">EXPERIENCE</a></li>
             <li class="rightNav" ><a href="profile">
                 <?php
-                    if ( isset($_SESSION['name'])) {
+                    if (isset($_SESSION['name'])) {
+                        echo '<a href="profile">';
                         echo $_SESSION['name'];
+                        echo '</a>';
                     } 
                     else {
-                        echo "Sign in";
+                        echo '<a href="login"> Sign in </a>';
                     }
                 ?>
-                    </a></li>
+            </li>
             <li class="rightNav" ><i class="fa fa-user" style="display: block; color: black; padding: 5px 16px; text-decoration: none; margin-top: 0px; border-radius: 15px; font-size: 40px;"></i></li>
         </ul>
     </div>

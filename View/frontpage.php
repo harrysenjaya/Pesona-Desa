@@ -14,19 +14,16 @@
 <body>
     <div class="font" style="float: right;font-size: 30px; margin-top: 20px; margin-right: 50px;">
         <i class="fa fa-user" style="color: white"></i>
-        <a id="loginText" style="text-decoration: none;">
-            <p class="mainLogin" style="display: inline; color: white; margin-right: 10px; font-size: 25px; cursor:  pointer;">
                 <?php
-                    if ( isset($_SESSION['name'])) {
+                    if (isset($_SESSION['name'])) {
+                        echo '<a href="profile" class="mainLogin">';
                         echo $_SESSION['name'];
+                        echo '</a>';
                     } 
                     else {
-                        echo "Sign in";
+                        echo '<a href="login" class="mainLogin"> Sign in </a>';
                     }
-                    ?>
-            </p>
-
-        </a>
+                ?>
     </div>
     <div class="clearFloat"></div>
     <div>
@@ -45,20 +42,6 @@
             <div style="width:100%;text-align: center;">
                 <button class="mainButton" id="experience">EXPERIENCE</button>
             </div>
-        </div>
-    </div>
-
-    <div id="loginModal" class="modal">
-        <div class="loginContent">
-            <form action ="login" method="POST">
-                <span class="close">&times;</span><br>
-                <p class="modalJudul">Login</p>
-                <p class="judulField">Email</p>
-                <input name="email" class="inputModal" type="email" id="emailLogin" required />
-                <p class="judulField">Password</p>
-                <input name="password" class="inputModal" type="password" id="pswLogin" required />
-                <button type="submit" class="modalButton">Sign in</button>
-            </form>
         </div>
     </div>
 
