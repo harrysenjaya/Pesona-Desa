@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Mar 2020 pada 17.52
+-- Waktu pembuatan: 08 Mar 2020 pada 18.20
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.3
 
@@ -43,15 +43,16 @@ CREATE TABLE `experience` (
   `CheckIn` date NOT NULL,
   `CheckOut` date NOT NULL,
   `Do` varchar(1000) NOT NULL,
-  `Dont` varchar(1000) NOT NULL
+  `Dont` varchar(1000) NOT NULL,
+  `Harga` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `experience`
 --
 
-INSERT INTO `experience` (`Id`, `NamaDesa`, `Brand`, `Pengalaman`, `Durasi`, `Foto`, `Deskripsi`, `JumlahPeserta`, `TingkatAktivitas`, `Bahasa`, `Highlight`, `CheckIn`, `CheckOut`, `Do`, `Dont`) VALUES
-(1, 'Desa Karangduwur', 'Sawangan Adventure', 'Telusur gua Sawangan Lor', 'Half day (1,5-3 jam)', 'exp', 'Menelusuri gua horizontal di area Sawangan Adventure. Peserta akan diajak menelusuri Gua Sawangan Lor dengan berjalan kaki selama 1,5 jam. Namun, sebelum menuju pintu/mulut gua, peserta akan berjalan menikmati hutan di desa. Peserta akan menemukan static pool pada akhir perjalanan penelusuran gua. Dan memanjat tebing setelah keluar gua. ', '6-10 orang', 'Tinggi', 'Indonesia', 'Helm, sepatu karet, 2 guide untuk 1 rombongan, snack dan minum di akhir tebing', '0000-00-00', '0000-00-00', 'Do: Membawa makanan ringan dan minuman sendiri.', 'Don\'t: Menyentuh stalagtit stalagmit yang masih hidup. Mengambil sesuatu dari dalam gua. ');
+INSERT INTO `experience` (`Id`, `NamaDesa`, `Brand`, `Pengalaman`, `Durasi`, `Foto`, `Deskripsi`, `JumlahPeserta`, `TingkatAktivitas`, `Bahasa`, `Highlight`, `CheckIn`, `CheckOut`, `Do`, `Dont`, `Harga`) VALUES
+(1, 'Desa Karangduwur', 'Sawangan Adventure', 'Telusur gua Sawangan Lor', 'Half day (1,5-3 jam)', 'exp', 'Menelusuri gua horizontal di area Sawangan Adventure. Peserta akan diajak menelusuri Gua Sawangan Lor dengan berjalan kaki selama 1,5 jam. Namun, sebelum menuju pintu/mulut gua, peserta akan berjalan menikmati hutan di desa. Peserta akan menemukan static pool pada akhir perjalanan penelusuran gua. Dan memanjat tebing setelah keluar gua. ', '6-10 orang', 'Tinggi', 'Indonesia', 'Helm, sepatu karet, 2 guide untuk 1 rombongan, snack dan minum di akhir tebing', '0000-00-00', '0000-00-00', 'Do: Membawa makanan ringan dan minuman sendiri.', 'Don\'t: Menyentuh stalagtit stalagmit yang masih hidup. Mengambil sesuatu dari dalam gua. ', 'Rp 100.000');
 
 -- --------------------------------------------------------
 
