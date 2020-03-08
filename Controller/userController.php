@@ -1,4 +1,5 @@
 <?php
+    require_once "Controller/view.php";
     require_once "Controller/services/mysqlDB.php";
 
     class UserController{
@@ -7,6 +8,10 @@
         public function __construct(){
             $this->db = new MySQLDB ("localhost", "root", "", "pesa8467_pesonadesa");
         }
+
+        public function start(){
+			return View::createView1('login.php');
+		}
 
         public function login(){
             $email = $_POST['email'];
