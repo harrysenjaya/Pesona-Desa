@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <link rel="stylesheet" href="View/Style/login.css" />
+</head>
+
 <body>
-<div class="loginContent">
-    <form action ="login" method="POST">
-        <span class="close">&times;</span><br>
-        <p class="modalJudul">Login</p>
-        <p class="judulField">Email</p>
-        <input name="email" class="inputModal" type="email" id="emailLogin" required />
-        <p class="judulField">Password</p>
-        <input name="password" class="inputModal" type="password" id="pswLogin" required />
-        <button type="submit" class="modalButton">Sign in</button>
-    </form>
-</div>
+    <div class="loginContent">
+        <p class="tulisan_login">Sign In</p>
+
+        <form>
+            <label>Email</label>
+            <input type="text" name="email" class="form_login" placeholder="Email">
+
+            <label>Password</label>
+            <input type="text" name="password" class="form_login" placeholder="Password">
+
+            <input type="submit" class="tombol_login" value="Login">
+            <br />
+            <br />
+        </form>
+    </div>
 </body>
 
 </html>

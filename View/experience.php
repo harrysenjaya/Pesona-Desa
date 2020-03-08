@@ -1,5 +1,4 @@
 <?php
-console.log($data);
 echo "<div>";
 for($i=0; $i<sizeof($data); $i++){
     $foto = $data[0]['Foto'];
