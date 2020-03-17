@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     .menuStay{
         width: 100%;
         height: 70px;
@@ -63,7 +63,7 @@
     .desWrapper{
         padding: 10px;
     }
-</style>
+</style> -->
 
 <div class="menuStay">
     <div class="menuKiri">
@@ -90,7 +90,7 @@ echo "<div class='contentStay'>";
 for($i=0; $i<sizeof($data); $i++){
     $foto = $data[$i]['Foto'];
     echo "<div class='hotelWrapper'>";
-    echo "<img style='max-width: 100%' src=Image/$foto.jpg>";
+    echo "<img style='max-width: 100%'  src=Image/$foto.jpg>";
     echo "<br>";
     echo "<div class='desWrapper'>";
     echo $data[$i]['NamaHouseStay'];

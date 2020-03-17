@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="View/Layout/layout.css">
     <link rel="stylesheet" href="View/Fonts/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="View/Style/stay.css">
     <script src="View/Layout/headerScript.js" defer></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
             <li style="margin-left: 0px;"><a href="home"style="margin-top: 0px;"><i class="fa fa-home"></i></a></li>
             <li><a id="stay" class="navJudul" href="stay">STAY</a></li>
             <li><a id="experience" class="navJudul" href="experience">EXPERIENCE</a></li>
-            <li class="rightNav" ><a href="profile">
+            <li class="rightNav" >
                 <?php
                     if (isset($_SESSION['name'])) {
                         echo '<a href="profile">';

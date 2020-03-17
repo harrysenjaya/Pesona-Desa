@@ -14,7 +14,7 @@
             <input type="text" name="email" class="form_login" placeholder="Email" required>
 
             <label>Password</label>
-            <input type="text" name="password" class="form_login" placeholder="Password" required>
+            <input type="password" name="password" class="form_login" placeholder="Password" required>
 
             <input type="submit" class="tombol_login" value="Login">
             <br />
