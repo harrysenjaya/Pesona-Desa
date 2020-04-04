@@ -10,7 +10,12 @@
         }
 
         public function start(){
-			return View::createView1('login.php');
+            if (isset($_SESSION['name'])){
+                return View::createView1('profile.php');
+            }
+            else{
+                return View::createView1('login.php');
+            }
 		}
 
         public function login(){
