@@ -67,9 +67,10 @@
 
 <div class="menuStay">
     <div class="menuKiri">
-        <form>
-            <input type="date" name="startDate">
-            <input type="date" name="endDate">
+        <form action ="book" method="POST">
+            <input type="date" name="checkin">
+            <input type="date" name="checkout">
+            <input type="submit" value="Cek Ketersediaan">
         </form>        
     </div>
     <div class="menuKanan">

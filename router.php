@@ -44,7 +44,12 @@
                 require_once "controller/userController.php";
                 $userCtrl = new UserController();
                 $userCtrl->login();
-                break;
+				break;
+			case $baseURL.'/book':
+				require_once "controller/stayController.php";
+				$stay = new stayController();
+				echo $stay -> book();
+				break;
 			default:
 				echo '404 not found';
 				break;
