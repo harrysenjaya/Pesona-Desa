@@ -14,11 +14,6 @@
 				$login = new userController();
 				echo $login -> start();
 				break;
-			case $baseURL."/profile":
-				require_once "Controller/userController.php";
-				$profile = new userController();
-				echo $profile -> start();
-				break;
 			case $baseURL."/stay":
 				require_once "Controller/stayController.php";
 				$stay = new stayController();
@@ -29,10 +24,6 @@
 				$experience = new experienceController();
 				echo $experience -> start();
 				break;	
-			case $baseURL.'/logout':
-				session_destroy();
-				header('Location: home');
-				break;
 			default:
 				echo '404 not found';
 				break;
@@ -44,12 +35,7 @@
                 require_once "controller/userController.php";
                 $userCtrl = new UserController();
                 $userCtrl->login();
-				break;
-			case $baseURL.'/book':
-				require_once "controller/stayController.php";
-				$stay = new stayController();
-				echo $stay -> book();
-				break;
+                break;
 			default:
 				echo '404 not found';
 				break;
