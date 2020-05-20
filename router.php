@@ -29,6 +29,16 @@
 				$experience = new experienceController();
 				echo $experience -> start();
 				break;	
+			case $baseURL."/stays":
+				require_once "Controller/stayController.php";
+				$experience = new stayController();
+				echo $experience -> detail();
+				break;	
+			case $baseURL."/experiences":
+				require_once "Controller/experienceController.php";
+				$experience = new experienceController();
+				echo $experience -> detail();
+				break;	
 			case $baseURL.'/logout':
 				session_destroy();
 				header('Location: home');
