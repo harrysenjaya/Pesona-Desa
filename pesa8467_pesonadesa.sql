@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Apr 2020 pada 18.04
+-- Waktu pembuatan: 21 Bulan Mei 2020 pada 15.00
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.3
 
@@ -147,9 +147,18 @@ CREATE TABLE `user_experience` (
 CREATE TABLE `user_stay` (
   `FkUser` int(11) NOT NULL,
   `FkStay` int(11) NOT NULL,
-  `CheckIn` date NOT NULL,
-  `CheckOut` date NOT NULL
+  `Booked` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `user_stay`
+--
+
+INSERT INTO `user_stay` (`FkUser`, `FkStay`, `Booked`) VALUES
+(1, 1, '2020-04-08'),
+(1, 1, '2020-04-09'),
+(2, 1, '2020-04-10'),
+(2, 1, '2020-04-11');
 
 --
 -- Indexes for dumped tables
